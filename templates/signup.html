@@ -6,14 +6,22 @@
 </head>
 <body>
 
-<form id="signupForm">
-  <input type="text" id="name" placeholder="Name" required><br>
-  <input type="email" id="email" placeholder="Email" required><br>
-  <input type="text" id="username" placeholder="Username" required><br>
-  <input type="password" id="password" placeholder="Password" required><br>
-  <button type="submit" onclick="window.location.href='/homepage'">Sign Up</button>
-</form>
-
+  <div class="signupForm-box">
+    <form class="signupForm">
+        <span class="title">Sign up</span>
+        <span class="subtitle">Create a free account with your email.</span>
+        <div class="form-container">
+          <input type="text" class="input" placeholder="Full Name">
+          <input type="email" class="input" placeholder="Email">
+          <input type="password" class="input" placeholder="Password">
+        </div>
+        <button type="submit" onclick="window.location.href='/homepage'">Sign Up</button>
+    </form>
+    <p class="login-label">
+      Don't have an account? <span class="login-link" onclick="window.location.href='/login'">Log in</span>
+    </p>
+    
+    </div>
 <script src="../static/script.js"></script>
 
 </body>
