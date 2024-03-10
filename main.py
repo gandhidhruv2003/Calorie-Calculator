@@ -60,8 +60,7 @@ def calculate():
             else:
                 quantity = 0
             if encoded_ingredient:  # Check if ingredient is not empty
-                pre_cal = model.predict([[enc_dict.get(encoded_ingredient), quantity]])[0]
-                predicted_calories.append(pre_cal)
+                pre_cal = round(float(model.predict([[enc_dict.get(encoded_ingredient), quantity]])[0]), 2)
                 calorie += pre_cal
             else:
                 predicted_calories.append(0)
