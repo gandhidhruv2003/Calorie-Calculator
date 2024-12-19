@@ -1,14 +1,13 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <title> Front Page </title>
-  <link rel="stylesheet" href= "{{ url_for('static', filename='styles.css') }}">
+  <title>Front Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
 
     <div id="wrapper">
-        <div><button id="signupBtn" onclick="window.location.href='/signup'">Sign Up</button></div>
-        <br>
-        <div><button id="loginBtn" onclick="window.location.href='/login'">Login</button></div>
+        <div><button id="getStartedBtn" onclick="window.location.href='/homepage'">Get Started</button></div>
     </div>
 
 <script src="../static/script.js"></script>
